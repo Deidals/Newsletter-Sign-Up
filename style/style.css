@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Robotto Bold";
+    src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Robotto";
+    src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+html, body{
+    height: 100%;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: inherit;
+    font-family: "Robotto";
+    font-size: 16px;
+}
+
+header, picture{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+h1{
+    font-family: "Robotto Bold";
+    font-size: clamp(2.5rem, 2.5vmin, 4rem);
+    
+}
+h1, p, ul{
+    margin-top: 10px;
+}
+li{
+    margin-top: 0.5rem;
+}
+main{
+    list-style-image: url("../assets/images/icon-list.svg");
+    list-style-position: inside;
+    line-height: 1.6;
+    color: hsl(234, 29%, 20%);
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+    gap: 1.5rem;
+}
+
+input{
+    all: unset;
+    width: auto;
+    height: clamp(3.5rem, 2.5vmin, 5rem);
+    border-radius: 0.5rem;
+    text-indent: 20px;
+    font-family: "Robotto";
+    font-size: clamp(1rem, 2.5vmin, 4rem);
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(231, 7%, 60%);
+    cursor: pointer;
+}
+
+button {
+    width: auto;
+    height: clamp(3.5rem, 2.5vmin, 5rem);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: "Robotto Bold";
+    font-size: clamp(1rem, 2.5vmin, 4rem);
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+}
+
+button:focus, button:hover {
+    background-image: linear-gradient(to right, #ff5476, #ff6742);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px hsla(12, 100%, 63%, 0.548);
+}
+
+
+.emailValidation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2, span{
+    font-size: 12px;
+    font-family: "Robotto Bold";
+}
+span{
+    color: hsl(4, 100%, 67%);
+    visibility: hidden;
+}
+

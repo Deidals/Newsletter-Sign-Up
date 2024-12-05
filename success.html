@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style-success.css">
+    <title>Frontend Mentor | Newsletter sign-up form success message</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/icon-list.svg" alt="Icon">
+    </header>
+    <div class="container">
+        <main>
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <strong id="userEmail"></strong>. 
+                Please open it and click the button inside to confirm your subscription.
+            </p>
+        </main>
+        <footer>
+            <button type="button">Dismiss Message</button>
+        </footer>
+    </div>
+</body>
+    <script>
+        const email = sessionStorage.getItem(`userEmail`);
+        const button = document.querySelector(`button`);
+
+        document.querySelector(`#userEmail`).textContent = email;
+
+        button.addEventListener(`click`, function(){
+            window.location.href = `index.html`;
+        });
+    </script>
+</html>
